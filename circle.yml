@@ -1,3 +1,2 @@
-test:
-  post:
-    - bundle exec rake custom:test:suite
+general:
+  build_dir: src
