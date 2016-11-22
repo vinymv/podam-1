@@ -1,3 +1,6 @@
 test:
- override:
-  - echo "test"
+ post:
+  - bundle exec rake spinach:
+   environment:
+   RAILS_ENV: test
+
