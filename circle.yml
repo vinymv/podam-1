@@ -1,7 +1,6 @@
 general:
   build_dir: src/main/java/uk/co/jemos/podam/api
-test:  
-    post:
-     - bundle exec rake spinach:
-     environment:
-      RAILS_ENV: test
+test:
+  post:
+    - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+    - find . -type f -regex ".*/build/test-results/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
