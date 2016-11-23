@@ -2,6 +2,7 @@ machine:
   ruby:
     version: rbx-2.2.6
 general:
+  build_dir: api
   artifacts:
    - $CIRCLE_TEST_REPORTS
    - target     
