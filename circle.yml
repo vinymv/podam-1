@@ -1,6 +1,5 @@
 general:
   build_dir: src/main/java/uk/co/jemos/podam/api
-  artifacts: - $CIRCLE_TEST_REPORTS
 test:
   override: - mvn clean
   post:
