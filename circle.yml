@@ -1,6 +1,8 @@
 general:
   build_dir: src/main/java/uk/co/jemos/podam/api
+  artifacts: - $CIRCLE_TEST_REPORTS - target
 test:
+  override: - mvn clean
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
     - find . -type f -regex ".*/build/test-results/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
