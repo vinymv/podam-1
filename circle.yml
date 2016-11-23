@@ -1,5 +1,5 @@
 general:
- build_dir: api
+ build_dir: /src/main/java/uk/co/jemos/podam/api/
  artifacts:
   - $CIRCLE_TEST_REPORTS
   - target
